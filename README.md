@@ -16,3 +16,6 @@ Use inside your Gruntfile:
 
 	grunt.loadNpmTasks('grunt-contrib-coffee');
 
+Simply run jmeter with the symlinked binary:
+
+	./node_modules/.bin/jmeter
