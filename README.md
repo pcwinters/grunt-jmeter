@@ -10,7 +10,7 @@ Checkout [Grunt](http://gruntjs.com/) for more information. In order to use this
 
 Download, Extract, and Install the jmeter distro. The jmeter binary will be symlinked in ./node_modules/.bin/jmeter
 
-	jmeter-manager install
+	./node_modules/.bin/jmeter-manager install
 
 Use inside your Gruntfile:
 
