@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+var optimist = require('optimist');
+
+var manager = require('../lib/manager')
+
+
+var cli = optimist.
+	usage('Usage: jmeter-manager <command>\n' +
+		'Commands:\n' +
+		'  install: install jmeter binaries\n');
+
+var argv = cli.
+	check(function(arg) {
+		if (arg._.length != 1) {
+			throw 'Please specify one command';
+		}
+	}).
+	argv;
+
+switch (argv._[0]) {
+	case 'install':
+		manager.downloadIfDoesNotExist(function(err, filePath){
+			if(err){
+				console.log('\nFailed:',err)
+				process.exit(1)
+			} else {
+				console.log('\nDone ',filePath)
+				process.exit(0)
+			}
+		});
+		break;
+}

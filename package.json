@@ -1,0 +1,49 @@
+{
+  "name": "grunt-jmeter",
+  "description": "Run jmeter tests with grunt.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/pcw216/grunt-jmeter",
+  "author": {
+    "name": "Patrick Winters",
+    "url": "https://github.com/pcw216"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pcw216/grunt-jmeter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pcw216/grunt-jmeter/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pcw216/grunt-jmeter/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.11"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "optimist": "~0.6.1",
+    "tarball-extract": "0.0.3"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "bin": {
+    "jmeter-manager": "bin/jmeter-manager",
+    "jmeter": "bin/jmeter"
+  },
+  "files": [
+    "bin",
+    "tasks",
+    "LICENSE"
+  ],
+  "jmeterVersions": {
+    "jmeter": "2.11"
+  }
+}
