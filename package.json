@@ -1,10 +1,11 @@
 {
   "name": "grunt-jmeter",
   "description": "Run jmeter tests with grunt.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/pcw216/grunt-jmeter",
   "author": {
     "name": "Patrick Winters",
+    "email": "pwinters@rallydev.com",
     "url": "https://github.com/pcw216"
   },
   "repository": {
@@ -24,7 +25,6 @@
     "node": ">= 0.10.11"
   },
   "dependencies": {
-    "lodash": "~2.4.1",
     "optimist": "~0.6.1",
     "tarball-extract": "0.0.3"
   },
@@ -40,6 +40,7 @@
   },
   "files": [
     "bin",
+    "lib",
     "tasks",
     "LICENSE"
   ],
