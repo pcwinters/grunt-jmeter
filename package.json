@@ -35,8 +35,7 @@
     "gruntplugin"
   ],
   "bin": {
-    "jmeter-manager": "bin/jmeter-manager",
-    "jmeter": "bin/jmeter"
+    "jmeter-manager": "bin/jmeter-manager"
   },
   "files": [
     "bin",
@@ -45,6 +44,6 @@
     "LICENSE"
   ],
   "jmeterVersions": {
-    "jmeter": "2.11"
+    "jmeter": "2.12"
   }
 }
